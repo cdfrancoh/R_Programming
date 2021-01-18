@@ -12,6 +12,7 @@ makeMatrix <- function(x = matrix()) {
 
 
 cacheInverse <- function(x, ...) {
+  ## Return a matrix that is the inverse of 'x'
   inverse <- x$getInverse()
   if(!is.null(inv)){
     message("getting cached data")
